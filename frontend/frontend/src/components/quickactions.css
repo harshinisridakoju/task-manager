@@ -1,0 +1,74 @@
+.quick-actions-fab {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 50;
+}
+
+.fab-button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fab-button:hover {
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.fab-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.fab-item {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.fab-item:hover {
+  background: var(--accent);
+  color: white;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .quick-actions-fab {
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .fab-button {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+
+  .fab-item {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
