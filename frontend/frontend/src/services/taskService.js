@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://task-manager-mszz.onrender.com/api/tasks";
 
 export const taskService = {
   // Get all tasks
