@@ -1,4 +1,4 @@
-const AUTH_URL = "http://localhost:5000/api/auth";
+const AUTH_URL = "https://task-manager-mszz.onrender.com/api/auth";
 
 export const authService = {
   register: async (data) => {
